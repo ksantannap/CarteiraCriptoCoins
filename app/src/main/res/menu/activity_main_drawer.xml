@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/cadastrar_investimento"
+            android:icon="@drawable/cadastrar_investimento"
+            android:title="@string/cadastrar_investimento"/>
+    </group>
+
+   <item android:title="@string/utilitarios">
+        <menu>
+            <item
+                android:id="@+id/converter_bitcoin"
+                android:icon="@drawable/bitcoin"
+                android:title="@string/calcular_moeda" />
+            <item
+                android:id="@+id/simular_compra_bitcoin"
+                android:icon="@drawable/bitcoin"
+                android:title="@string/simular_rendimento" />
+        </menu>
+   </item>
+
+</menu>

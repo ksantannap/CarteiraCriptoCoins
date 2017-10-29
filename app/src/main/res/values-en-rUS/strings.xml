@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="configuracoes">Settings</string>
+    <string name="app_name">Cryptocoins wallet</string>
+    <string name="cadastrar_investimento">Register Investment</string>
+    <string name="botao_mostrar_investimentos">Show my investments</string>
+    <string name="calcular_moeda">Calculate Currency</string>
+    <string name="simular_rendimento">Simulate Income</string>
+    <string name="utilitarios">Tools</string>
+    <string name="valor_investimento">Amount invested in BRL. Ex: 1000</string>
+    <string name="valor_atual_reais">Current value in BRL. Ex: 15000</string>
+    <string name="valor_compra">Purchase value in BRL. Ex: 15000</string>
+    <string name="converter">To Convert</string>
+    <string name="mostrar_valor_btc">Value BTC</string>
+    <string name="descricao_app">Tools to Bitcoins</string>
+</resources>

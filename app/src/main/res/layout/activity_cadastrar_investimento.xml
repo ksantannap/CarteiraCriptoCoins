@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fundo">
+
+    <TextView
+        android:id="@+id/cadastrar_investimento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/cadastrar_investimento"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="#696969"
+        android:padding="20dp"/>
+
+    <EditText
+        android:id="@+id/cadastro_vlCompra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/valor_compra"
+        android:layout_marginBottom="15sp"
+        android:background="@drawable/edittext_arredondado"
+        android:padding="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/cadastro_qtComprou"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/valor_investimento"
+        android:layout_marginBottom="15sp"
+        android:background="@drawable/edittext_arredondado"
+        android:padding="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:inputType="numberDecimal"/>
+
+    <Button
+        android:id="@+id/cadastro_botaoCadastrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cadastrar_investimento"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/button_arredondado"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:padding="10sp"/>
+
+</LinearLayout>

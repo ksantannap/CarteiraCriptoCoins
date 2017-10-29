@@ -1,0 +1,18 @@
+<resources>
+    <string name="navigation_drawer_open" />
+    <string name="navigation_drawer_close" />
+    <string name="configuracoes">Configurações</string>
+    <string name="app_name">Carteira de Criptcoins</string>
+    <string name="cadastrar_investimento">Cadastrar Investimento</string>
+    <string name="botao_mostrar_investimentos">Mostrar meus investimentos</string>
+    <string name="calcular_moeda">Calcular Moeda</string>
+    <string name="simular_rendimento">Simular Rendimento</string>
+    <string name="utilitarios">Utilitários</string>
+    <string name="valor_investimento">Valor investido em BRL. Ex: 15000</string>
+    <string name="valor_compra">Valor de compra em BRL. Ex: 15000</string>
+    <string name="valor_atual_reais">Valor atual em BRL. Ex: 15000</string>
+    <string name="converter">Converter</string>
+    <string name="mostrar_valor_btc">Cotação BTC</string>
+    <string name="descricao_app">Ferramentas para Bitcoins</string>
+
+</resources>

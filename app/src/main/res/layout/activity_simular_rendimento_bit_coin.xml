@@ -1,0 +1,96 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fundo">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/simular_rendimento"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="#696969"
+        android:padding="20dp"/>
+
+    <EditText
+        android:id="@+id/simulador_vlCompra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/valor_compra"
+        android:layout_marginBottom="15sp"
+        android:background="@drawable/edittext_arredondado"
+        android:padding="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/simulador_vlAtual"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/valor_atual_reais"
+        android:layout_marginBottom="15sp"
+        android:background="@drawable/edittext_arredondado"
+        android:padding="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/simulador_qtComprou"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/valor_investimento"
+        android:layout_marginBottom="15sp"
+        android:background="@drawable/edittext_arredondado"
+        android:padding="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:inputType="numberDecimal"/>
+
+    <Button
+        android:id="@+id/simulador_botaoSimular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/simular_rendimento"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/button_arredondado"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:padding="10sp"/>
+
+    <TextView
+        android:id="@+id/simulador_txtLucroOuPerda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="#696969"
+        android:padding="20dp"/>
+
+    <TextView
+        android:id="@+id/simulador_vlCalculado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:padding="5dp"
+        android:textColor="#2eb627"/>
+
+    <TextView
+        android:id="@+id/simulador_txtReais"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:text=""
+        android:textStyle="bold"
+        android:textColor="#696969"
+        android:padding="5dp"/>
+
+</LinearLayout>
