@@ -42,6 +42,8 @@ public class SimularRendimentoBitCoin extends AppCompatActivity {
             ConsultaMoedaTask task = (ConsultaMoedaTask) new ConsultaMoedaTask(this, SimularRendimentoBitCoin.this).execute();
             String response = task.get();
             cotacaoMoeda = new ConverterJsonParaObjeto().converter(response);
+
+            //colocado somente um comentario para commit.
         } catch (InterruptedException e) {
             e.printStackTrace();
         } catch (ExecutionException e) {
