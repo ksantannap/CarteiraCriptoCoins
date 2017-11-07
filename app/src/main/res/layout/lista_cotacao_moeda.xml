@@ -1,114 +1,171 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    app:cardElevation="30dp"
-    android:layout_margin="15dp"
-    android:layout_gravity="center">
-    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:layout_gravity="center">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Cotação em tempo real"
-            android:padding="15dp"
-            android:textSize="25sp"
-            android:gravity="center"
-            android:textStyle="bold"/>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Data da cotação: "
-                android:padding="15dp"
-                android:textSize="18sp"/>
-
-            <TextView
-                android:id="@+id/cotacao_data"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="00.000,00"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                android:padding="15dp"/>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Menor preço hoje: "
-                android:padding="15dp"
-                android:textSize="18sp"/>
-
-            <TextView
-                android:id="@+id/cotacao_menor_preco"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="00.000,00"
-                android:textSize="18sp"
-                android:textColor="#f51c1c"
-                android:textStyle="bold"
-                android:padding="15dp"/>
-        </LinearLayout>
+        android:layout_gravity="center"
+        android:layout_margin="15dp"
+        app:cardElevation="30dp">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Maior preço hoje: "
-                android:padding="15dp"
-                android:textSize="18sp"/>
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="vertical">
 
             <TextView
-                android:id="@+id/cotacao_maior_preco"
-                android:layout_width="0dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="00.000,00"
-                android:textSize="18sp"
-                android:textColor="#1e931a"
-                android:textStyle="bold"
-                android:padding="15dp"/>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Preço atual: "
+                android:gravity="center"
                 android:padding="15dp"
-                android:textSize="18sp"/>
+                android:text="Cotação em tempo real"
+                android:textSize="25sp"
+                android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/cotacao_preco_atual"
-                android:layout_width="0dp"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="00.000,00"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                android:padding="15dp"/>
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="15dp"
+                    android:text="Data da cotação: "
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/cotacao_data"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="15dp"
+                    android:text="00.000,00"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="15dp"
+                    android:text="Menor preço hoje: "
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/cotacao_menor_preco"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="15dp"
+                    android:text="00.000,00"
+                    android:textColor="#f51c1c"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="15dp"
+                    android:text="Maior preço hoje: "
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/cotacao_maior_preco"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="15dp"
+                    android:text="00.000,00"
+                    android:textColor="#1e931a"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="15dp"
+                    android:text="Preço atual: "
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/cotacao_preco_atual"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="15dp"
+                    android:text="00.000,00"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="15dp"
+                    android:text="Informe o preco que quer ser notificado: "
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/cotacao_preco_avisar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittext_arredondado_cinza"
+                    android:inputType="numberDecimal"
+                    android:padding="15dp"
+                    android:textSize="18sp"
+                    android:layout_marginRight="20dp"
+                    android:textColorHint="#FFCFCFCF"
+                    android:textColor="#FFCFCFCF"
+                    android:textStyle="bold"
+                    android:focusable="true"/>
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="20dp"
+                android:background="@drawable/button_arredondado"
+                android:hint="Me avisar"
+                android:onClick="avisarValorBtc"
+                android:textColor="#FFF"
+                android:textColorHint="#FFF" />
+
         </LinearLayout>
-    </LinearLayout>
-</android.support.v7.widget.CardView>
+    </android.support.v7.widget.CardView>
+</ScrollView>

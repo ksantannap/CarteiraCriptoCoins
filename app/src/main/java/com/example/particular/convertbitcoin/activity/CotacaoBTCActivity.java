@@ -1,32 +1,22 @@
 package com.example.particular.convertbitcoin.activity;
 
-import android.os.AsyncTask;
-import android.support.v7.app.AppCompatActivity;
+import android.content.DialogInterface;
 import android.os.Bundle;
+import android.support.v7.app.AlertDialog;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.particular.convertbitcoin.ConsultaMoedaTask;
 import com.example.particular.convertbitcoin.R;
-import com.example.particular.convertbitcoin.client.ClientConsultaMoeda;
-import com.example.particular.convertbitcoin.constantes.Constantes;
 import com.example.particular.convertbitcoin.helper.ConverterJsonParaObjeto;
 import com.example.particular.convertbitcoin.helper.Util;
 import com.example.particular.convertbitcoin.vo.CotacaoMoeda;
 
-import java.math.BigDecimal;
-import java.sql.Timestamp;
 import java.text.SimpleDateFormat;
-import java.util.Arrays;
-import java.util.Date;
 import java.util.GregorianCalendar;
-import java.util.List;
-import java.util.Timer;
-import java.util.TimerTask;
 import java.util.concurrent.ExecutionException;
 
 public class CotacaoBTCActivity extends AppCompatActivity {
@@ -63,6 +53,35 @@ public class CotacaoBTCActivity extends AppCompatActivity {
             precoAtual.setText("R$" + Util.formatarMoeda(cotacaoMoeda.getLast()));
             data.setText(dataFormatada);
         }
+
+    }
+
+    public void avisarValorBtc(final View view) {
+
+        EditText precoParaSerAvisado = (EditText) findViewById(R.id.cotacao_preco_avisar);
+
+        AlertDialog.Builder build = new AlertDialog.Builder(CotacaoBTCActivity.this);
+        build.setTitle("Quer ser avisado?")
+                .setMessage("Você será avisado quando o valor do Bitcoin chegar em R$"
+                        + Util.formatarMoeda(precoParaSerAvisado.getText().toString())
+                        +". \nConfirma?")
+                .setIcon(R.drawable.notificacao_2)
+                .setPositiveButton("Sim", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        Toast.makeText(CotacaoBTCActivity.this, "You are smart!", Toast.LENGTH_SHORT).show();
+                        finish();
+                    }
+                })
+                .setNegativeButton("Não quero!", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+
+                    }
+                });
+
+        AlertDialog alerta = build.create();
+        alerta.show();
 
     }
 }
